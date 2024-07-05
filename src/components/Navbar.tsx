@@ -10,11 +10,11 @@ const Navbar = () => {
   };
 
   return (
-    <header className="px-80">
+    <header className="md:px-10 lg:px-60">
       <nav className="flex justify-between items-center h-16 py-2 px-10 text-white m-4 text-lg font-bold relative">
         <h1>Patrick</h1>
 
-        <div className="hidden lg:block">
+        <div className="hidden md:block">
           <ul className="flex">
             <li className="p-6">Home</li>
             <li className="p-6">About</li>
@@ -22,14 +22,14 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="lg:hidden">
+        <div className="md:hidden">
           <button onClick={toggleMobileMenu}>
             <HamburgerMenuIcon height={24} width={24} />
           </button>
         </div>
       </nav>
       
-      <div className={`lg:hidden absolute z-50 h-full w-full transform transition-transform duration-300 bg-gray-400 backdrop-filter backdrop-blur-md bg-opacity-20 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`md:hidden absolute z-50 h-full w-full transform transition-transform duration-300 bg-gray-400 backdrop-filter backdrop-blur-md bg-opacity-20 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <ul className="flex flex-col justify-center items-center">
           <li className="p-6 text-2xl">Home</li>
           <li className="p-6 text-2xl">About</li>
