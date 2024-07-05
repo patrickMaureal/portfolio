@@ -10,9 +10,9 @@ const Navbar = () => {
   };
 
   return (
-    <header>
+    <header className="px-80">
       <nav className="flex justify-between items-center h-16 py-2 px-10 text-white m-4 text-lg font-bold relative">
-        <h1>Navbar</h1>
+        <h1>Patrick</h1>
 
         <div className="hidden lg:block">
           <ul className="flex">
