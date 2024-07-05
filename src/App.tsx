@@ -4,9 +4,8 @@ import Home from "./pages/Home"
 function App() {
 
   return (
-    <div className="h-screen overflow-hidden bg-zinc-600 font-mono">
+    <div className="h-full overflow-hidden bg-zinc-600 font-mono">
 			<Navbar/>
-
 			<div>
 				<Home/>
 			</div>
