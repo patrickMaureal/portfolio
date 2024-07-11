@@ -16,6 +16,7 @@ export default {
 			fontFamily: {
 				'bebas' : ['Bebas Neue', 'cursive'],
 				'manrope': ['Manrope', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
 			}
 		},
   },
