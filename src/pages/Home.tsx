@@ -1,4 +1,4 @@
-import About from "../components/sections/hero/About"
+import About from "../components/sections/about/About"
 import Hero from "../components/sections/hero/Hero"
 
 const Home = () => {
