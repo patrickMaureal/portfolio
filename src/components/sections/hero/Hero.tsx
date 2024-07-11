@@ -2,7 +2,7 @@ import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import myProfile from '../../../assets/profile/profile.png'
 const Hero = () => {
 	return (
-		<div className='flex flex-col md:flex-row justify-between items-center p-8 md:px-40 md:py-12 lg:px-80 lg:py-24 space-y-20 lg:space-x-52'>
+		<div className='flex flex-col md:flex-row justify-between items-center p-8 md:px-40 md:py-12 lg:px-56 lg:py-10 space-y-20 lg:space-x-52 lg:space-y-0'>
 			<div>
 				<h1 className='text-7xl font-bebas text-white'>Hi, I'm </h1>
 				<h1 className='text-7xl font-bebas text-white'>Patrick Maureal</h1>
