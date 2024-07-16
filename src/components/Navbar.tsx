@@ -30,7 +30,7 @@ const Navbar = () => {
       </nav>
       
       <div className={`md:hidden absolute z-50 h-full w-full transform transition-transform duration-300 bg-gray-400 backdrop-filter backdrop-blur-md bg-opacity-20 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-        <ul className="flex flex-col justify-center items-center">
+        <ul className="flex flex-col justify-center items-center text-white">
           <li className="p-6 text-2xl">Home</li>
           <li className="p-6 text-2xl">About</li>
           <li className="p-6 text-2xl">Contact</li>
