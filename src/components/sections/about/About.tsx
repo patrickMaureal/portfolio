@@ -1,31 +1,16 @@
-import { Text,Image, Box } from "@chakra-ui/react";
-import  AboutImage  from "../../../assets/about/about-me.png"
- 
+import aboutImg from "../../../assets/profile/profile.png"
+
 const About = () => {
   return (
-    <div className="bg-red-800 flex justify-between items-center px-60 py-20 space-x-40">
-      <div>
-        <h2 className="text-6xl text-white font-bold tracking-widest mb-10">
-          ABOUT ME
-        </h2>
-        <Text color={"white"}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </Text>
-      </div>
-			<div>
-				<Box boxSize={"md"}>
-					<Image src={AboutImage} alt='About Image' />
-				</Box>
+    <div className="flex flex-col md:flex-row justify-between items-start p-8 md:px-40 md:py-12 lg:px-56 lg:py-10 space-y-20 lg:space-x-52 lg:space-y-0">
+			<div className="flex flex-col space-y-6">
+				<p className="font-manrope text-subtitle text-lg text-base">I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. </p>
+				<a href="#" className="underline underline-offset-4 uppercase text-primary font-manrope text-sm"> More About Me</a>
 			</div>
-    </div>
+			<div>
+				<img src={aboutImg} alt="" className="rounded-lg" />
+			</div>
+		</div>
   );
 };
 
