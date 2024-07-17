@@ -9,7 +9,7 @@ const Contact = () => {
 					Let’s connect        
 				</h1>
 				<p className="text-subtitle">
-          Say hello at janpatrick@gmail.com
+          Say hello at janpatrickmaureal@gmail.com
         </p>
 				<p className="text-subtitle font-manrope text-base font-normal">
 				For more info, here’s my resume
