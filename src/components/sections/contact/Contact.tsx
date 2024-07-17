@@ -1,4 +1,5 @@
 import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons"
+import ContactForm from "../../ui/ContactForm"
 
 const Contact = () => {
 	return (
@@ -20,6 +21,8 @@ const Contact = () => {
 				<TwitterLogoIcon height={26} width={26} />
 				<InstagramLogoIcon height={26} width={26} />
 			</div>
+
+			<ContactForm />
 		</div>
 	)
 }
