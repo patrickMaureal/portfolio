@@ -3,10 +3,10 @@ import ContactForm from "../../ui/ContactForm"
 
 const Contact = () => {
 	return (
-		<div className="flex flex-col md:flex-row justify-between items-start p-8 md:px-20 md:py-12 md:space-x-20 md:space-y-0 lg:px-56 lg:py-10 space-y-20 lg:space-x-52 lg:space-y-0">
+		<div className="flex flex-col md:flex-row justify-between items-start p-8 md:px-20 md:py-12 md:space-x-20 md:space-y-0 lg:px-28 lg:py-10 space-y-20 lg:space-x-28 lg:space-y-0">
 			<div className="md:space-y-10">
-				<div className="space-y-4">
-					<h1 className="font-bebas text-5xl font-normal text-white">
+				<div className="space-y-4 ">
+						<h1 className="font-bebas text-5xl font-normal text-white">
 						Let’s connect        
 					</h1>
 					<p className="text-subtitle">
