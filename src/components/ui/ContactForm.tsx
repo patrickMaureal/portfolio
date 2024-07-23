@@ -19,7 +19,7 @@ const ContactForm = () => {
 					<textarea name="message" id="message" className="py-2.5 px-4 bg-[#1A1A1A] rounded-lg text-white" rows={4}></textarea>
 				</div>
 
-				<button className="rounded-full uppercase bg-primary py-4 px-4 md:py-4 md:px-8 text-background font-manrope font-bold text-base md:text-xl w-2/5">Submit</button>
+				<button className="rounded-full uppercase bg-primary py-4 px-4 md:py-4 md:px-8 text-background font-manrope font-bold text-base md:text-xl w-2/5 md:w-3/5">Submit</button>
 			</form>
 		</>
 	)
