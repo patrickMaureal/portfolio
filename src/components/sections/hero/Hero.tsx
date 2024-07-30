@@ -6,7 +6,7 @@ const Hero = () => {
 			<div>
 				<h1 className='text-7xl font-bebas text-white md'>Hi, I am </h1>
 				<h1 className='text-7xl font-bebas text-white'>Patrick Maureal</h1>
-				<p className='text-lg text-subtitle font-normal'>A Sydney based front-end developer passionate about building accessible and user friendly websites.</p>
+				<p className='text-lg text-subtitle font-normal'>A Cebu based web developer passionate about building accessible and user friendly websites.</p>
 				<div className='flex items-center space-x-2 md:space-x-4'>
 					<button className='mt-8 rounded-full bg-primary py-4 px-4 md:py-4 md:px-8 '>
 						<span className='font-manrope font-extrabold md:font-bold text-sm md:text-xl'>DOWNLOAD RESUME</span>

@@ -11,7 +11,7 @@ const Projects = () => {
         </h1>
         <p className="text-subtitle">
           Here are some of the selected projects that showcase my passion for
-          front-end development.
+          web development.
         </p>
 
 				{projects.map((project, index) => (
