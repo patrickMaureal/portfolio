@@ -1,4 +1,6 @@
+import { projects } from "../../../types/Projects";
 import ProjectCards from "../../ui/ProjectCards";
+
 
 const Projects = () => {
   return (
@@ -12,9 +14,14 @@ const Projects = () => {
           front-end development.
         </p>
 
-				<ProjectCards />
-				<ProjectCards />
-				<ProjectCards />
+				{projects.map((project, index) => (
+					<ProjectCards
+						key={index}
+						Project={project.Project}
+						ProjectInfo={project.ProjectInfo}
+						projectSource={project.projectSource}
+					/>
+				))}
 				
       </div>
     </div>
