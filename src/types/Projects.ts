@@ -17,7 +17,7 @@ export type ProjectData = {
 export const projects: ProjectData[] = [
 	{
     Project: {
-      projectImg: "src/assets/projects/sample.png",
+      projectImg: "src/assets/projects/portfolio.png",
       projectName: "Portfolio",
       projectDesc: "This project is a personal portfolio website designed to showcase my skills, projects, and professional experience. Developed using modern web technologies, the portfolio aims to provide a visually appealing and user-friendly interface to highlight my work and achievements.",
     },
@@ -74,7 +74,7 @@ export const projects: ProjectData[] = [
   },
 	{
     Project: {
-      projectImg: "src/assets/projects/sample.png",
+      projectImg: "src/assets/projects/lakat.png",
       projectName: "Lakat Booking System",
       projectDesc: "The Lakat Booking System is a web-based portal designed to manage and streamline the process of booking accommodations for a resort. This project is being developed as a freelance assignment for a student client as part of their Computer System Project. Utilizing the Laravel framework, the system aims to provide a user-friendly, efficient, and secure platform for both guests and resort staff.",
     },
