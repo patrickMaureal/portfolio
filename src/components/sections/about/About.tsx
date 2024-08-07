@@ -2,7 +2,7 @@ import aboutImg from "../../../assets/profile/profile.png"
 
 const About = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-start p-8 space-y-20 md:px-10 md:py-12 md:space-x-20 lg:px-12 lg:py-32 lg:space-x-28 lg:space-y-0">
+    <div className="flex flex-col md:flex-row justify-between items-start p-8 space-y-20 md:px-10 md:py-12 md:space-x-20 lg:px-32 lg:py-32 lg:space-x-28 lg:space-y-0">
 			<div className="hidden md:block">
 				<h1 className="font-bebas font-normal md:text-7xl lg:text-9xl text-white ">About Me</h1>
 			</div>
