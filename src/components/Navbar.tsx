@@ -1,5 +1,6 @@
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { useRecoilState } from "recoil";
+import { Link } from "react-router-dom";
 import { mobileMenuState } from "../state/atoms/mobileMenuState";
 
 const Navbar = () => {
@@ -16,9 +17,8 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <ul className="flex">
-            <li className="p-6 font-inter font-medium text-base">Home</li>
-            <li className="p-6 font-inter font-medium text-base">About</li>
-            <li className="p-6 font-inter font-medium text-base">Contact</li>
+            <li className="p-6 font-inter font-medium text-base"><Link to="/">Home </Link></li>
+            <li className="p-6 font-inter font-medium text-base"><Link to="/about">About </Link></li>
           </ul>
         </div>
 
@@ -31,9 +31,8 @@ const Navbar = () => {
       
       <div className={`md:hidden absolute z-50 h-full w-full transform transition-transform duration-300 bg-gray-400 backdrop-filter backdrop-blur-md bg-opacity-20 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <ul className="flex flex-col justify-center items-center text-white">
-          <li className="p-6 text-2xl">Home</li>
-          <li className="p-6 text-2xl">About</li>
-          <li className="p-6 text-2xl">Contact</li>
+          <li className="p-6 text-2xl"><Link to="/">Home</Link></li>
+          <li className="p-6 text-2xl"><Link to="/about">About</Link></li>
         </ul>
       </div>
     </header>

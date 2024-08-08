@@ -1,18 +1,12 @@
-import Footer from "./components/Footer"
-import Navbar from "./components/Navbar"
-import Home from "./pages/Home"
+import { RouterProvider } from "react-router-dom";
+import Router from "./routes/Router";
 
 function App() {
+	const router = Router();
 
   return (
-    <div className="h-full overflow-hidden bg-background">
-			<Navbar/>
-			<div>
-				<Home/>
-			</div>
-			<Footer/>
-    </div>
-  )
+		<RouterProvider router={router} />
+	);
 }
 
 export default App
