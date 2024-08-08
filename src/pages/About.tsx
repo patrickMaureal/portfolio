@@ -1,7 +1,10 @@
+import AboutMe from "../components/sections/about-me/AboutMe"
 
 const About = () => {
 	return (
-		<div>About</div>
+		<div className="divide-gray-500 divide-y-2">
+			<AboutMe />
+		</div>
 	)
 }
 
