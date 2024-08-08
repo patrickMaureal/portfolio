@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <header className="md:px-0 lg:px-16">
-      <nav className="flex justify-between items-center h-16 py-2 px-10 text-white m-4 relative">
+      <nav className="flex justify-between items-center h-16 py-2 px-0 text-white m-4 relative">
         <h1 className="font-bebas font-bold text-3xl">Patrick Maureal</h1>
 
         <div className="hidden md:block">
