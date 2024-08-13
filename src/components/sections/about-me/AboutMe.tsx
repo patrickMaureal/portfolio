@@ -30,6 +30,19 @@ const AboutMe = () => {
 			<div>
 				<img src={aboutImg} alt="" className="rounded-lg" />
 			</div>
+			<div>
+				<h1 className="font-bebas font-normal text-5xl md:text-7xl lg:text-9xl text-white ">My Capabilities</h1>
+				<p className="font-manrope text-subtitle text-base lg:text-2xl font-normal">I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. </p>
+				<div className="grid grid-cols-3 items-center justify-center gap-4 mt-8 uppercase text-white font-bold font-manrope text-sm">
+					<h4 className="border border-[#484848] rounded-full p-2">HTML</h4>
+					<h4 className="border border-[#484848] rounded-full p-2">CSS</h4>
+					<h4 className="border border-[#484848] rounded-full p-2">Javascript</h4>
+					<h4 className="border border-[#484848] rounded-full p-2">JQuery</h4>
+					<h4 className="border border-[#484848] rounded-full p-2 col-span-2">Accesibility</h4>
+					<h4 className="border border-[#484848] rounded-full p-2">Figma</h4>
+					<h4 className="border border-[#484848] rounded-full p-2 col-span-2">Tailwind CSS</h4>
+				</div>
+			</div>
 		</div>
   );
 }
