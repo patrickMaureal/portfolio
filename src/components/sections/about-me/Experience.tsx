@@ -2,8 +2,8 @@ const Experience = () => {
 	return (
 		<div className="flex flex-col md:flex-row justify-between items-start px-4 py-20 space-y-20 md:px-10 md:py-12 md:space-x-20 lg:px-32 lg:py-32 lg:space-x-28 lg:space-y-0">
 			<div className="flex flex-col space-y-6 self-center">
-				<div className="flex flex-col space-y-8">
-					<h1 className="font-bebas font-normal text-6xl md:text-7xl lg:text-9xl text-white ">My Experience</h1>
+				<div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-52">
+					<h1 className="font-bebas font-normal text-6xl md:text-7xl lg:text-8xl text-white ">My Experience</h1>
 					<div className='flex flex-col space-y-3'>
 						<div className='flex flex-col space-y-3'>
 							<div>
