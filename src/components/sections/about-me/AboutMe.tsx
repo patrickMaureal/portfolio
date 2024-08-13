@@ -4,7 +4,7 @@ import downloadImg from "../../../assets/about/download-icon.png"
 
 const AboutMe = () => {
 	return (
-    <div className="flex flex-col md:flex-row justify-between items-start px-4 py-20 space-y-20 md:px-10 md:py-12 md:space-x-20 lg:px-32 lg:py-32 lg:space-x-28 lg:space-y-0">
+    <div className="flex flex-col px-4 py-20 space-y-20 md:px-10 md:py-12 lg:px-32 lg:py-32 lg:space-x-28 lg:space-y-0">
 			
 			<div className="flex flex-col space-y-6 self-center">
 				<div className="flex flex-col space-y-4">
@@ -28,7 +28,7 @@ const AboutMe = () => {
 				</div>
 			</div>
 			<div>
-				<img src={aboutImg} alt="" className="rounded-lg" />
+				<img src={aboutImg} alt="" className="rounded-lg md:w-screen" />
 			</div>
 			<div>
 				<h1 className="font-bebas font-normal text-5xl md:text-7xl lg:text-9xl text-white ">My Capabilities</h1>
