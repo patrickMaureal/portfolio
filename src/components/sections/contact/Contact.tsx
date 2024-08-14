@@ -1,5 +1,4 @@
-import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons"
-import ContactForm from "../../ui/ContactForm"
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons"
 
 const Contact = () => {
 	return (
@@ -12,19 +11,12 @@ const Contact = () => {
 					<p className="text-subtitle">
 						Say hello at janpatrickmaureal@gmail.com
 					</p>
-					<p className="text-subtitle font-manrope text-base font-normal">
-					For more info, here’s my resume
-					</p>
 				</div>
 				<div className="flex flex-row space-x-6 text-primary">
 					<LinkedInLogoIcon height={26} width={26} />
 					<GitHubLogoIcon height={26} width={26} />
-					<TwitterLogoIcon height={26} width={26} />
-					<InstagramLogoIcon height={26} width={26} />
 				</div>
 			</div>
-
-			<ContactForm />
 		</div>
 	)
 }
