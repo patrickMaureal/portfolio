@@ -1,6 +1,6 @@
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import aboutImg from "../../../assets/profile/profile.png";
-import downloadImg from "../../../assets/about/download-icon.png";
+import ResumeButton from "../../ui/ResumeButton";
 
 const AboutMe = () => {
   return (
@@ -23,12 +23,7 @@ const AboutMe = () => {
               Learning more to improve skill.
             </p>
             <div className="flex items-center space-x-4 md:space-x-6">
-              <button className="flex items-center justify-center space-x-4 mt-8 rounded-full bg-primary py-1 px-2 md:py-4 md:px-8 ">
-                <span className="font-manrope font-bold text-sm md:text-xl">
-                  DOWNLOAD RESUME{" "}
-                </span>
-                <img src={downloadImg} className="w-10 h-10" alt="" />
-              </button>
+              <ResumeButton />
               <div className="flex items-center space-x-3">
                 <button className="mt-8 rounded-full bg-[#222222] py-3 px-3">
                   <LinkedInLogoIcon height={26} width={26} color="#D3E97A" />
