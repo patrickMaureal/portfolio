@@ -10,12 +10,12 @@ const Hero = () => {
 				<p className='text-lg text-subtitle font-normal'>A Cebu based web developer passionate about building accessible and user friendly websites.</p>
 				<div className='flex items-center space-x-2 md:space-x-4'>
 					<ResumeButton />
-					<button className='mt-8 rounded-full bg-[#222222] py-4 px-4'>
+					<a href='https://www.linkedin.com/in/janpatrickmaureal/' className='mt-8 rounded-full bg-[#222222] py-4 px-4'>
 						<LinkedInLogoIcon height={26} width={26} color='#D3E97A'/> 
-					</button>
-					<button className='mt-8 rounded-full bg-[#222222] py-4 px-4'>
+					</a>
+					<a href='https://github.com/patrickMaureal' className='mt-8 rounded-full bg-[#222222] py-4 px-4'>
 						<GitHubLogoIcon height={26} width={26} color='#D3E97A'/>
-					</button>
+					</a>
 				</div>
 				
 			</div>

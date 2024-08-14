@@ -25,12 +25,12 @@ const AboutMe = () => {
             <div className="flex items-center space-x-4 md:space-x-6">
               <ResumeButton />
               <div className="flex items-center space-x-3">
-                <button className="mt-8 rounded-full bg-[#222222] py-3 px-3">
+                <a href="https://www.linkedin.com/in/janpatrickmaureal/" className="mt-8 rounded-full bg-[#222222] py-3 px-3">
                   <LinkedInLogoIcon height={26} width={26} color="#D3E97A" />
-                </button>
-                <button className="mt-8 rounded-full bg-[#222222] py-3 px-3">
+                </a>
+                <a href="https://github.com/patrickMaureal" className="mt-8 rounded-full bg-[#222222] py-3 px-3">
                   <GitHubLogoIcon height={26} width={26} color="#D3E97A" />
-                </button>
+                </a>
               </div>
             </div>
           </div>

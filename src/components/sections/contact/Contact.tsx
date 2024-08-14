@@ -13,8 +13,10 @@ const Contact = () => {
 					</p>
 				</div>
 				<div className="flex flex-row space-x-6 text-primary">
-					<LinkedInLogoIcon height={26} width={26} />
-					<GitHubLogoIcon height={26} width={26} />
+					
+					<a href="https://www.linkedin.com/in/janpatrickmaureal/" target="_blank" rel="noopener noreferrer"><LinkedInLogoIcon height={26} width={26} /></a>
+					<a href="https://github.com/patrickMaureal" target="_blank" rel="noopener noreferrer"><GitHubLogoIcon height={26} width={26} /></a>
+					
 				</div>
 			</div>
 		</div>
