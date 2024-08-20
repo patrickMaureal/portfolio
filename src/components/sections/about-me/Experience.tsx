@@ -14,7 +14,7 @@ const Experience = () => {
 							<h4 className='text-primary font-manrope text-base font-semibold'>CVISNET FOUNDATION INC.</h4>
 							
 						</div>
-						<p className="font-manrope text-subtitle text-base font-normal lg:text-2xl font-normal">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p className="font-manrope text-subtitle text-base font-normal lg:text-2xl ">As an IT Specialist at CVISNET Foundation Inc. since August 2023, I primarily focus on web development tasks. I contribute to development planning and seek guidance from seniors to enhance my skills and deliver quality work.</p>
 					</div>
 				</div>
 			</div>

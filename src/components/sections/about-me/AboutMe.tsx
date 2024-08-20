@@ -25,10 +25,16 @@ const AboutMe = () => {
             <div className="flex items-center space-x-4 md:space-x-6">
               <ResumeButton />
               <div className="flex items-center space-x-3">
-                <a href="https://www.linkedin.com/in/janpatrickmaureal/" className="mt-8 rounded-full bg-[#222222] py-3 px-3">
+                <a
+                  href="https://www.linkedin.com/in/janpatrickmaureal/"
+                  className="mt-8 rounded-full bg-[#222222] py-3 px-3"
+                >
                   <LinkedInLogoIcon height={26} width={26} color="#D3E97A" />
                 </a>
-                <a href="https://github.com/patrickMaureal" className="mt-8 rounded-full bg-[#222222] py-3 px-3">
+                <a
+                  href="https://github.com/patrickMaureal"
+                  className="mt-8 rounded-full bg-[#222222] py-3 px-3"
+                >
                   <GitHubLogoIcon height={26} width={26} color="#D3E97A" />
                 </a>
               </div>
@@ -37,35 +43,42 @@ const AboutMe = () => {
         </div>
       </div>
       <div>
-        <img src={aboutImg} alt="" className="rounded-lg md:w-screen lg:hidden" />
+        <img
+          src={aboutImg}
+          alt=""
+          className="rounded-lg md:w-screen lg:hidden"
+        />
       </div>
       <div className="lg:flex lg:flex-row lg:space-x-72 ">
         <h1 className="font-bebas font-normal text-5xl md:text-7xl text-white ">
           My Capabilities
         </h1>
-				<div>
-					<p className="font-manrope text-subtitle text-base lg:text-2xl font-normal">
-						I am always looking to add more skills.Morbi egestas neque eu blandit
-						fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus
-						faucibus tristique ut et dolor.{" "}
-					</p>
-					<div className="grid grid-cols-3 items-center justify-center gap-4 mt-8 uppercase text-white font-bold font-manrope text-sm">
-						<h4 className="border border-[#484848] rounded-full p-2">HTML</h4>
-						<h4 className="border border-[#484848] rounded-full p-2">CSS</h4>
-						<h4 className="border border-[#484848] rounded-full p-2">
-							Javascript
-						</h4>
-						<h4 className="border border-[#484848] rounded-full p-2">JQuery</h4>
-						<h4 className="border border-[#484848] rounded-full p-2 col-span-2">
-							Accesibility
-						</h4>
-						<h4 className="border border-[#484848] rounded-full p-2">Figma</h4>
-						<h4 className="border border-[#484848] rounded-full p-2 col-span-2">
-							Tailwind CSS
-						</h4>
-					</div>
-				</div>
-        
+        <div>
+          <p className="font-manrope text-subtitle text-base lg:text-2xl font-normal">
+            I am constantly seeking to expand my skill set and broaden my
+            expertise in the field of Software Development. With a focus on
+            continuous learning, I aim to deepen my knowledge, enhance my
+            abilities, and build connections within the industry. By staying
+            curious and open to new challenges, I strive to grow both
+            professionally and personally, contributing to impactful and
+            innovative projects.
+          </p>
+          <div className="grid grid-cols-3 items-center justify-center gap-4 mt-8 uppercase text-white font-bold font-manrope text-sm">
+            <h4 className="border border-[#484848] rounded-full p-2">HTML</h4>
+            <h4 className="border border-[#484848] rounded-full p-2">CSS</h4>
+            <h4 className="border border-[#484848] rounded-full p-2">
+              Javascript
+            </h4>
+            <h4 className="border border-[#484848] rounded-full p-2">JQuery</h4>
+            <h4 className="border border-[#484848] rounded-full p-2 col-span-2">
+              Accesibility
+            </h4>
+            <h4 className="border border-[#484848] rounded-full p-2">Figma</h4>
+            <h4 className="border border-[#484848] rounded-full p-2 col-span-2">
+              Tailwind CSS
+            </h4>
+          </div>
+        </div>
       </div>
     </div>
   );
