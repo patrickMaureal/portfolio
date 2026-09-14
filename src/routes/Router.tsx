@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import About from "../pages/About";
+import Work from "../pages/Work";
 import MainLayout from "../layouts/MainLayout";
 
 function Router () {
@@ -16,10 +17,13 @@ function Router () {
 				{
 					path: "about",
 					element: <About/>
+				},
+				{
+					path: "work",
+					element: <Work/>
 				}
 			]
 		},
-		
 	]);
 	return router;
 }

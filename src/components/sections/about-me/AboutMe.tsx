@@ -4,79 +4,69 @@ import ResumeButton from "../../ui/ResumeButton";
 
 const AboutMe = () => {
   return (
-    <div className="flex flex-col px-4 py-20 space-y-20 md:px-10 md:py-12 lg:px-28 lg:py-32 lg:space-x-0 lg:space-y-32">
-      <div className="flex flex-col space-y-6 self-center">
-        <div className="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-80">
-          <h1 className="font-bebas font-normal text-6xl md:text-9xl text-white ">
-            About Me
+    <div className="mx-auto max-w-6xl px-4 py-20 md:px-6 lg:px-8 lg:py-24">
+      <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+        <div>
+          <p className="section-label">Profile</p>
+          <h1 className="mt-4 font-bebas text-5xl text-primary md:text-7xl lg:text-8xl">
+            About me
           </h1>
-          <div>
-            <h4 className="font-manrope font-medium text-3xl text-white">
-              I am a web developer based in Cebu, Philippines.{" "}
-            </h4>
-            <p className="font-manrope text-subtitle text-lg lg:text-2xl font-normal">
-              I am a web developer based in Cebu looking for exciting
-              opportunities. Likes to focus on accessibility when developing.
-              Passionate and curious about solving problems. Currently, I’m
-              exploring Reactjs, Typescript and a bit of Designing. While I am
-              not programming, I enjoy playing basketball and cosplaying.
-              Learning more to improve skill.
-            </p>
-            <div className="flex items-center space-x-4 md:space-x-6">
-              <ResumeButton />
-              <div className="flex items-center space-x-3">
-                <a
-                  href="https://www.linkedin.com/in/janpatrickmaureal/"
-                  className="mt-8 rounded-full bg-[#222222] py-3 px-3"
-                >
-                  <LinkedInLogoIcon height={26} width={26} color="#D3E97A" />
-                </a>
-                <a
-                  href="https://github.com/patrickMaureal"
-                  className="mt-8 rounded-full bg-[#222222] py-3 px-3"
-                >
-                  <GitHubLogoIcon height={26} width={26} color="#D3E97A" />
-                </a>
-              </div>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-2xl font-medium text-primary md:text-4xl">
+            I build clean, thoughtful web experiences that help products feel clear, useful, and trustworthy.
+          </h2>
+          <p className="text-base leading-8 text-subtitle md:text-lg">
+            I&apos;m a web developer based in Cebu, Philippines, focused on crafting modern interfaces that balance strong user experience, accessibility, and business goals. I enjoy turning ideas into polished digital experiences that are easy to understand and a pleasure to use.
+          </p>
+
+          <div className="flex flex-wrap items-center gap-4 pt-2">
+            <ResumeButton />
+            <div className="flex items-center gap-3">
+              <a
+                href="https://www.linkedin.com/in/janpatrickmaureal/"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-panel text-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedInLogoIcon height={20} width={20} />
+              </a>
+              <a
+                href="https://github.com/patrickMaureal"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-panel text-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GitHubLogoIcon height={20} width={20} />
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div>
+
+      <div className="mt-12">
         <img
           src={aboutImg}
-          alt=""
-          className="rounded-lg md:w-screen lg:hidden"
+          alt="Patrick Maureal"
+          className="w-full rounded-[28px] border border-border object-cover md:h-[420px] lg:hidden"
         />
       </div>
-      <div className="lg:flex lg:flex-row lg:space-x-72 ">
-        <h1 className="font-bebas font-normal text-5xl md:text-7xl text-white ">
-          My Capabilities
+
+      <div className="mt-16 grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
+        <h1 className="font-bebas text-5xl text-primary md:text-6xl">
+          My capabilities
         </h1>
         <div>
-          <p className="font-manrope text-subtitle text-base lg:text-2xl font-normal">
-            I am constantly seeking to expand my skill set and broaden my
-            expertise in the field of Software Development. With a focus on
-            continuous learning, I aim to deepen my knowledge, enhance my
-            abilities, and build connections within the industry. By staying
-            curious and open to new challenges, I strive to grow both
-            professionally and personally, contributing to impactful and
-            innovative projects.
+          <p className="text-base leading-8 text-subtitle md:text-lg">
+            I&apos;m continuously expanding my skill set across web development, UI systems, and product thinking. I enjoy learning by building, improving my craft through real projects, and collaborating with teams that care about quality, clarity, and thoughtful execution.
           </p>
-          <div className="grid grid-cols-3 items-center justify-center gap-4 mt-8 uppercase text-white font-bold font-manrope text-sm">
-            <h4 className="border border-[#484848] rounded-full p-2">HTML</h4>
-            <h4 className="border border-[#484848] rounded-full p-2">CSS</h4>
-            <h4 className="border border-[#484848] rounded-full p-2">
-              Javascript
-            </h4>
-            <h4 className="border border-[#484848] rounded-full p-2">JQuery</h4>
-            <h4 className="border border-[#484848] rounded-full p-2 col-span-2">
-              Accesibility
-            </h4>
-            <h4 className="border border-[#484848] rounded-full p-2">Figma</h4>
-            <h4 className="border border-[#484848] rounded-full p-2 col-span-2">
-              Tailwind CSS
-            </h4>
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
+            {['HTML', 'CSS', 'JavaScript', 'React', 'TypeScript', 'Tailwind CSS', 'Accessibility', 'Figma'].map((item) => (
+              <div key={item} className="rounded-full border border-border bg-panel px-3 py-2 text-center text-xs font-medium uppercase tracking-[0.14em] text-primary">
+                {item}
+              </div>
+            ))}
           </div>
         </div>
       </div>

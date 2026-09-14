@@ -22,79 +22,45 @@ type Props = {
 
 const ProjectCards = ( { Project, ProjectInfo, projectSource }: Props) => {
   return (
-    <div className="flex flex-col md:flex-row justify-between space-y-4 mt-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-				<div className="md:flex justify-center items-center">
-					<div className="bg-[#1A1A1A] px-2 py-4 md:flex justify-center items-center">
-						<img src={Project.projectImg} alt="" className="rounded-3xl" />
-					</div>
-				</div>
-        
-        <div>
-          <div className="mt-10 space-y-4">
-            <h1 className="text-white text-2xl md:text-3xl font-medium font-manrope">
-              {Project.projectName}
-            </h1>
-            <p className="text-subtitle font-manrope font-normal">
-              {Project.projectDesc}
-            </p>
+    <article className="minimal-card overflow-hidden rounded-[28px] p-4 sm:p-6">
+      <div className="grid items-center gap-6 md:grid-cols-[1.05fr_1fr]">
+        <div className="overflow-hidden rounded-[20px] border border-border bg-background p-3">
+          <img src={Project.projectImg} alt={Project.projectName} className="h-full w-full rounded-[14px] object-cover" />
+        </div>
+
+        <div className="flex flex-col gap-5 px-1 py-2">
+          <div className="space-y-3">
+            <h3 className="text-2xl font-medium text-primary md:text-3xl">{Project.projectName}</h3>
+            <p className="text-base leading-7 text-subtitle">{Project.projectDesc}</p>
           </div>
-          <div className="mt-8 divide-y divide-gray-500 divide-y-1 space-y-2">
-            <h3 className="text-base text-manrope font-semibold uppercase text-white">
-              Project Info
-            </h3>
-            <div className="flex flex-row justify-between items-center py-2">
-              <h5 className="text-white text-base font-medium font-manrope">
-                Year
-              </h5>
-              <h5 className="text-[#C7C7C7] text-base font-medium font-manrope">
-                {ProjectInfo.year}
-              </h5>
+
+          <div className="space-y-3 border-y border-border py-4">
+            <p className="text-[0.68rem] uppercase tracking-[0.2em] text-muted">Project info</p>
+            <div className="flex items-center justify-between gap-4 text-sm">
+              <span className="text-primary">Year</span>
+              <span className="text-subtitle">{ProjectInfo.year}</span>
             </div>
-            <div className="flex flex-row justify-between items-center py-2">
-              <h5 className="text-white text-base font-medium font-manrope">
-                Role
-              </h5>
-              <h5 className="text-[#C7C7C7] text-base font-medium font-manrope">
-								{ProjectInfo.role}
-              </h5>
+            <div className="flex items-center justify-between gap-4 text-sm">
+              <span className="text-primary">Role</span>
+              <span className="text-subtitle">{ProjectInfo.role}</span>
             </div>
-            <div></div>
           </div>
-          <div className="mt-10 flex text-primary space-x-4 underline underline-offset-4 ">
-            <div className="flex flex-row justify-between items-center">
-							{projectSource.live && (<>
-									<a
-									href={projectSource.live}
-									className="uppercase font-manrope font-bold text-sm mr-1"
-									target="_blank"
-								>
-									Live Demo
-								</a>
-								<ArrowTopRightIcon height={16} width={16} />
-							</>)}
-              
-            </div>
-            <div className="flex flex-row justify-between items-center3">
-							{
-								projectSource.github && (
-									<>
-										<a
-											href={projectSource.github}
-											className="uppercase font-manrope font-bold text-sm mr-1"
-											target="_blank"
-										>
-											See on Github
-										</a>
-										<GitHubLogoIcon height={16} width={16} />
-									</>
-								)
-							}
-            </div>
+
+          <div className="flex flex-wrap gap-5 text-sm uppercase tracking-[0.16em] text-primary">
+            {projectSource.live && (
+              <a href={projectSource.live} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-primary">
+                Live demo <ArrowTopRightIcon height={14} width={14} />
+              </a>
+            )}
+            {projectSource.github && (
+              <a href={projectSource.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-primary">
+                GitHub <GitHubLogoIcon height={14} width={14} />
+              </a>
+            )}
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

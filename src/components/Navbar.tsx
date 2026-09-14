@@ -11,28 +11,38 @@ const Navbar = () => {
   };
 
   return (
-    <header className="md:px-0 lg:px-16">
-      <nav className="flex justify-between items-center h-16 py-2 px-0 text-white m-4 relative">
-        <h1 className="font-bebas font-bold text-3xl">Patrick Maureal</h1>
+    <header className="sticky top-0 z-40 border-b border-border/80 bg-background/90 backdrop-blur-sm">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <Link to="/" className="font-bebas text-3xl tracking-[0.08em] text-primary">
+          Patrick Maureal
+        </Link>
 
         <div className="hidden md:block">
-          <ul className="flex">
-            <li className="p-6 font-inter font-medium text-base"><Link to="/">Home </Link></li>
-            <li className="p-6 font-inter font-medium text-base"><Link to="/about">About </Link></li>
+          <ul className="flex items-center gap-8 text-xs uppercase tracking-[0.22em] text-subtitle">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/work">Work</Link></li>
           </ul>
         </div>
 
+        <div className="hidden md:block">
+          <a href="mailto:janpatrickmaureal@gmail.com" className="inline-flex items-center rounded-full border border-primary px-4 py-2 text-[0.7rem] uppercase tracking-[0.18em] text-primary">
+            Let&apos;s talk
+          </a>
+        </div>
+
         <div className="md:hidden">
-          <button onClick={toggleMobileMenu}>
-            <HamburgerMenuIcon height={24} width={24} />
+          <button onClick={toggleMobileMenu} className="text-primary">
+            <HamburgerMenuIcon height={22} width={22} />
           </button>
         </div>
       </nav>
-      
-      <div className={`md:hidden absolute z-50 h-full w-full transform transition-transform duration-300 bg-gray-400 backdrop-filter backdrop-blur-md bg-opacity-20 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-        <ul className="flex flex-col justify-center items-center text-white">
-          <li className="p-6 text-2xl"><Link to="/">Home</Link></li>
-          <li className="p-6 text-2xl"><Link to="/about">About</Link></li>
+
+      <div className={`md:hidden absolute inset-x-0 top-full z-50 border-b border-border bg-background/95 backdrop-blur-md transition-transform duration-300 ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-2 opacity-0 pointer-events-none'}`}>
+        <ul className="flex flex-col items-center py-6 text-primary">
+          <li className="py-3 text-lg uppercase tracking-[0.18em]"><Link to="/">Home</Link></li>
+          <li className="py-3 text-lg uppercase tracking-[0.18em]"><Link to="/about">About</Link></li>
+          <li className="py-3 text-lg uppercase tracking-[0.18em]"><Link to="/work">Work</Link></li>
         </ul>
       </div>
     </header>

@@ -2,19 +2,42 @@ import aboutImg from "../../../assets/profile/profile.png"
 
 const About = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-start p-8 md:px-10 md:py-12 md:space-x-10 lg:px-32 lg:py-32 lg:space-x-28 lg:space-y-0">
-			<div className="hidden md:block">
-				<h1 className="font-bebas font-normal md:text-7xl lg:text-9xl text-white ">About Me</h1>
-			</div>
-			<div className="flex flex-col space-y-6 self-center">
-				<h4 className="font-manrope font-medium text-3xl text-white">I am a web developer based in Cebu, Philippines. </h4>
-				<p className="font-manrope text-subtitle text-lg lg:text-2xl font-normal">I am a web developer based in Cebu looking for exciting opportunities. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Typescript and a bit of Designing. While I am not programming, I enjoy playing basketball and cosplaying. Learning more to improve skill.</p>
-				<a href="#" className="underline underline-offset-4 uppercase text-primary font-manrope text-sm"> More About Me</a>
-			</div>
-			<div className="md:hidden">
-				<img src={aboutImg} alt="" className="rounded-lg" />
-			</div>
-		</div>
+    <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div className="grid items-start gap-8 md:grid-cols-[0.7fr_1.3fr] md:gap-12">
+        <div className="hidden md:flex md:items-center md:justify-start">
+          <h1 className="font-bebas text-6xl leading-none text-primary lg:text-8xl">About</h1>
+        </div>
+
+        <div className="flex flex-col gap-6">
+          <p className="section-label">Profile</p>
+          <h2 className="text-2xl font-medium text-primary md:text-4xl">
+            I craft digital experiences that are thoughtful, useful, and easy to trust.
+          </h2>
+          <p className="max-w-2xl text-base leading-8 text-subtitle md:text-lg">
+            I&apos;m a web developer based in Cebu, Philippines, focused on building modern interfaces that balance clarity, accessibility, and strong product thinking. I enjoy solving real user problems with elegant code and customer-first design decisions.
+          </p>
+
+          <div className="grid gap-4 pt-2 sm:grid-cols-3">
+            <div className="rounded-2xl border border-border bg-panel p-4">
+              <p className="text-[0.66rem] uppercase tracking-[0.18em] text-muted">Experience</p>
+              <p className="mt-2 text-2xl font-medium text-primary">3+ yrs</p>
+            </div>
+            <div className="rounded-2xl border border-border bg-panel p-4">
+              <p className="text-[0.66rem] uppercase tracking-[0.18em] text-muted">Focus</p>
+              <p className="mt-2 text-2xl font-medium text-primary">Web</p>
+            </div>
+            <div className="rounded-2xl border border-border bg-panel p-4">
+              <p className="text-[0.66rem] uppercase tracking-[0.18em] text-muted">Style</p>
+              <p className="mt-2 text-2xl font-medium text-primary">Clean</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 md:hidden">
+        <img src={aboutImg} alt="Patrick Maureal" className="h-56 w-full rounded-[22px] border border-border object-cover" />
+      </div>
+    </section>
   );
 };
 
